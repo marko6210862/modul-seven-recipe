@@ -1,0 +1,165 @@
+body {
+  background-color: rgb(6, 45, 62);
+}
+    
+.search {
+width: 100%;
+padding: 12px 24px;
+background-color: transparent;
+font-size: 18px;
+line-height: 18px;
+color: rgb(236, 214, 173);
+background-color: transparent;
+border: 2px solid rgb(163, 84, 43);
+}
+
+.head {
+font-size: 60px;
+font-family: 'Parisienne', cursive;
+color: rgb(197, 104, 55);
+margin: 0px;
+margin-top: 20px;
+}
+  
+.container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.container-search {
+display: flex;
+justify-content: flex-end;
+margin-right: 60px;
+margin-bottom: 20px;
+}
+
+.container-image {
+display: grid;
+justify-content: center;
+margin: auto;
+grid-area: auto;
+}
+  
+.check {
+width: 15px;
+}
+  
+li, ul {
+list-style-type: none;
+color: rgb(236, 214, 173);
+}
+  
+.list {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+padding: 10px;
+}
+
+/* карточка */
+
+.box {
+width: 300px;
+border: 2px solid rgb(0, 26, 23);
+background-color:rgb(6, 65, 83);
+margin: 10px;
+-webkit-box-shadow: 0px 5px 10px 2px rgb(0, 26, 23);
+-moz-box-shadow: 0px 5px 10px 2px rgb(0, 26, 23);
+box-shadow: 0px 5px 10px 2px rgb(0, 26, 23);
+display: grid;
+margin-top: 50px;
+}
+
+.card {
+margin: 5px;
+border: 1px solid rgb(163, 84, 43);
+}
+
+
+.header {
+font-family: 'Courgette', cursive;
+color: rgb(226, 200, 140);
+font-size: 23px;
+padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+}
+
+.tasty {
+width: 250px;
+position: relative;
+
+}
+
+.par {
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: 210px;
+margin-left: 220px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color: rgb(163, 84, 43);
+position: absolute;
+font-size: 25px;
+font-family: 'Courgette', cursive; 
+color: rgb(236, 214, 173);
+padding: 0px;
+transform: rotate(-30deg);
+}
+
+.Cal {
+font-size: 15px;
+margin-top: -25px;
+text-align: center;
+margin-left: -5px;
+}
+
+.cal {
+align-items: center;
+margin-top: 7px;
+margin-left: -5px;
+}
+  
+ul {
+list-style: none; 
+padding: 0px;
+}
+    
+li {
+display: block;
+}
+  
+li:hover {
+background: rgb(173, 226, 208);  
+}
+  
+button {
+background: none;
+border: none;
+}
+  
+.logo {
+border: 2px solid rgb(0, 26, 23);
+cursor: pointer;
+width: 130px;
+height: 130px;
+border-radius: 50%;
+box-shadow: 0px 0px 8px 5px rgb(0, 26, 23);
+margin: 15px;
+}
+
+.logo:hover {
+border: 2px solid rgb(163, 84, 43);
+box-shadow: 0px 0px 8px 5px rgb(163, 84, 43);
+}
+
+.dish {
+font-size: 18px;
+font-family: 'Courgette', cursive; 
+color:  rgb(163, 84, 43);
+margin-top: 0;
+}
