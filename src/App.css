@@ -2,17 +2,6 @@ body {
   background-color: rgb(6, 45, 62);
 }
     
-.search {
-width: 100%;
-padding: 12px 24px;
-background-color: transparent;
-font-size: 18px;
-line-height: 18px;
-color: rgb(236, 214, 173);
-background-color: transparent;
-border: 2px solid rgb(163, 84, 43);
-}
-
 .head {
 font-size: 60px;
 font-family: 'Parisienne', cursive;
@@ -27,11 +16,47 @@ justify-content: center;
 flex-wrap: wrap;
 }
 
+/* search */
+
 .container-search {
 display: flex;
 justify-content: flex-end;
-margin-right: 60px;
-margin-bottom: 20px;
+margin-bottom: 40px;
+margin-top: 70px;
+}
+
+.form {
+display: flex;
+position: absolute;
+width: 435px;
+height: 32px;
+top: 70px;
+right: -50px;
+margin-top: 40px;
+}
+
+.search {
+align-items: center;
+width: 100%;
+padding: 12px 24px;
+font-size: 18px;
+line-height: 18px;
+color: rgb(236, 214, 173);
+background-color: transparent;
+border: 2px solid rgb(163, 84, 43);
+}
+
+.icons {
+background-image: url("https://cdn-icons-png.flaticon.com/512/4478/4478006.png");  
+position: absolute;
+height: 30px;
+width: 30px;
+top: 10px;
+border: none;
+right: 120px;
+}
+.icons:hover {
+cursor: pointer;
 }
 
 .container-image {
@@ -141,6 +166,10 @@ button {
 background: none;
 border: none;
 }
+
+.btn {
+position: relative;
+}
   
 .logo {
 border: 2px solid rgb(0, 26, 23);
@@ -163,3 +192,4 @@ font-family: 'Courgette', cursive;
 color:  rgb(163, 84, 43);
 margin-top: 0;
 }
+
