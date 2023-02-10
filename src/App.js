@@ -1,6 +1,6 @@
 
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import MyRecipeComponent from './MyRecipeComponent';
 import ButtonsPlates from './ButtonsPlates';
@@ -14,15 +14,16 @@ const [myRecipes, setMyRecipes] = useState ([]);
 const [wordSubmitted, setWordSubmitted] = useState (['avocado']);
 
 
-useEffect (() => {
-const getQuotes = async () => {
+
+const getQuotes = useCallback (async () => {
 const responce = await fetch (`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
 const data = await responce.json();
 setMyRecipes(data.hits);
-}
-getQuotes()
-
 },[wordSubmitted])
+
+useEffect (() => {
+getQuotes()
+},[getQuotes])
 
 const myRecipeSearch = (e) => {
 setMySearch (e.target.value)

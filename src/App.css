@@ -157,11 +157,7 @@ padding: 0px;
 li {
 display: block;
 }
-  
-li:hover {
-background: rgb(173, 226, 208);  
-}
-  
+ 
 button {
 background: none;
 border: none;
