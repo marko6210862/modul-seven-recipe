@@ -60,7 +60,7 @@ return (
 
     <div className='container'>
       {myRecipes.map(element => (
-      <MyRecipeComponent label={element.recipe.label} image={element.recipe.image} calories={element.recipe.calories} ingredients={element.recipe.ingredientLines}/>
+      <MyRecipeComponent key={element.recipe} label={element.recipe.label} image={element.recipe.image} calories={element.recipe.calories} ingredients={element.recipe.ingredientLines}/>
      ))}
     </div>
        
