@@ -16,7 +16,7 @@ function MyRecipeComponent ({label, image, calories, ingredients}) {
         
         <ul className="list">
             {ingredients.map(ingredient => (
-            <li>{ingredient}</li>
+            <li key={ingredients}>{ingredient}</li>
             ))}
         </ul>
     </div>
